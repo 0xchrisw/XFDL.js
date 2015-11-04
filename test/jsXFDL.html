@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="woodall.christopher@gmail.com">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+    <title>jsXFDL - Test</title>
+    <link href="jsXFDL.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="#">
+        jsXFDL
+      </a>
+    </nav>
+    <!-- /Navigation -->
+
+    <!-- Main -->
+    <main>
+      <!--
+        Description
+        Usage
+          - Eaxmples
+            - Read
+            - Save
+      -->
+      Note: All files must be base64 decoded and ungzipped before use.
+      <br /><br />
+      You can use the 'copy( )' command in devtools or write the result to a file with node. You can also zip the files and serve them.
+      <br /><br />
+      <h3>Example</h3>
+      <pre>
+        var Form     = DD1750.join( '\n' ),
+            Document = new jsXFDL( Form );
+        console.log( Document );
+      </pre>
+    </main>
+    <!-- Main -->
+
+    <script src="../src/jsXFDL.js"></script>
+    <script src="jsXFDL.example.js"></script>
+    <script>
+      var Form     = DD1750.join( '\n' ),
+          Document = new jsXFDL( Form );
+      console.log( Document );
+    </script>
+  </body>
+</html>
